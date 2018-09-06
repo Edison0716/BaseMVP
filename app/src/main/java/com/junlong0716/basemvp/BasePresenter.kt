@@ -1,15 +1,10 @@
 package com.junlong0716.basemvp
-
 import android.content.Context
 
-/**
- * @author SmartSean Created on 2018/1/25 16:18.
- */
-
 class BasePresenter<M : BaseModel, V : BaseView> : IPresenter {
-    protected var mModel: M? = null
+    private var mModel: M? = null
 
-    protected var mView: V? = null
+    private var mView: V? = null
 
     val viewContext: Context?
         get() = null
